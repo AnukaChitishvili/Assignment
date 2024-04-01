@@ -12,13 +12,21 @@ const CardList = ({setSelectedCard}) => {
       .then(response => response.json())
       .then(data => setData(data))
     }, []) 
+   
+    
+    const handleDelete = (id) => {
+      fetch(`http://localhost:3000/menu/${id}`, {
+        method: "DELETE"
+      })
+    }
 
+ 
 
     return ( 
     <>   
    {
       data.map(item => {
-        return  <div className='card--wrapper'> 
+        return  <div className='card--wrapper' key={item.id}> 
         <img src={item.url} alt='bowl'/>
         <div className='content'>
         <div>
@@ -27,12 +35,12 @@ const CardList = ({setSelectedCard}) => {
          </div>
          <span className='title'>{item.dish_name}</span>
          <p>{item.description}</p> 
- <div className='price--icon__wrapper'> 
+      <div className='price--icon__wrapper'> 
          <span className='price'>${item.price}</span>
          <div className='icons'>
          <FontAwesomeIcon icon={faPenToSquare} onClick={() => setSelectedCard(item)}/>
          <div className='trash'>
-         <FontAwesomeIcon icon={faTrash} />
+         <FontAwesomeIcon icon={faTrash} onClick={() => handleDelete(item.id)} />
          </div>
          </div>
          </div>

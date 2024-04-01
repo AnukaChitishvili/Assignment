@@ -89,6 +89,23 @@
       ],
       "price": 10.99,
       "url": "./src/assets/item6.png"
+    },
+    {
+      "id": "8",
+      "dish_name": "Vegetable Stir-Fry",
+      "description": "Assorted fresh vegetables stir-fried in a savory sauce.",
+      "score": 10,
+      "ingredients": [
+        "Broccoli",
+        "Bell peppers",
+        "Carrots",
+        "Snap peas",
+        "Soy sauce"
+      ],
+      "price": 11.99,
+      "url": "./src/assets/item2.png"
     }
- ]
+  ]
 }
+
+

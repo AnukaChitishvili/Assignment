@@ -8,7 +8,9 @@ import Fries from '../../assets/fries.png'
 
 const Content = () => { 
 
-  const [selectedCard, setSelectedCard] = useState(null)
+  const [selectedCard, setSelectedCard] = useState(null) 
+
+
 
 
   return (
