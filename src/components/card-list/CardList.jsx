@@ -21,8 +21,7 @@ const CardList = ({setSelectedCard}) => {
     }
 
  
-
-    return ( 
+   return ( 
     <>   
    {
       data.map(item => {

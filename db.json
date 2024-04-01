@@ -14,7 +14,7 @@
       ],
       "price": 10.45,
       "url": "./src/assets/item1.png"
-},
+    },
     {
       "id": "3",
       "dish_name": "Caprese Salad",
@@ -28,7 +28,7 @@
         "Extra virgin olive oil"
       ],
       "price": 9.99,
-      "url":"./src/assets/item2.png"
+      "url": "./src/assets/item2.png"
     },
     {
       "id": "4",
@@ -73,7 +73,7 @@
         "Anchovies"
       ],
       "price": 8.99,
-      "url":"./src/assets/item5.png"
+      "url": "./src/assets/item5.png"
     },
     {
       "id": "7",
@@ -107,5 +107,3 @@
     }
   ]
 }
-
-

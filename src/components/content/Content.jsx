@@ -1,20 +1,28 @@
 import { useState } from 'react'
 
-
+import Modal from '../modal/Modal'
 import CardList from '../card-list/CardList'
 import Bowl from '../../assets/mainbowl.png'
 import Fries from '../../assets/fries.png'
 
 
 const Content = () => { 
-
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedCard, setSelectedCard] = useState(null) 
-
-
+  
+   const openModal = () => {
+    setIsModalOpen(true)
+   }
+  
+   const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedCard(null)
+   }
+  
 
 
   return (
-    <>
+    <> 
   <section className='container'> 
     <div className='article'>
     <div>
@@ -31,7 +39,10 @@ const Content = () => {
      <section className='middle--section'>
         <h1 className='heading'>Top List</h1>
         <h3>our mainstay menu</h3>
-        <button id='add'>Add item</button>
+        <button id='add' onClick={openModal}>Add item</button>
+        {/* {isModalOpen && <Modal toggleModal={toggleModal} data={selectedCard} />} */}
+        {isModalOpen && <Modal data={selectedCard} closeModal={closeModal} />}
+        {/* <CardList toggleModal={toggleModal} setSelectedCard={setSelectedCard}/> */}
         <div className='card--list__container'>
          <CardList/>
         </div>
