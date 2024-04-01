@@ -1,0 +1,22 @@
+@import './components/header/_header.scss';
+@import './components/content/content';
+@import './components/footer/footer';
+@import './components/card-list/cardList';
+
+
+
+#root {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(115, 115, 115, 0.3), rgba(162, 115, 91, 0.3), rgba(222, 213, 204, 0.3));
+}
+
+
+.container {
+  max-width: 1700px;
+  height: auto;
+}
+

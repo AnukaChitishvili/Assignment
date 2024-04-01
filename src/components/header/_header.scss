@@ -1,0 +1,38 @@
+
+$textColor: rgb(95, 95, 95);
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h1 {
+        font-size: 25px;
+        cursor: pointer;
+    }
+    span.yellow {
+        color: rgba(245, 203, 78, 0.914);
+     }
+    span.brown {
+        color: brown;
+     }
+    ul {
+        list-style-type: none;
+        display: flex;
+       }
+   li {
+    margin-left: 10px;
+    a {
+     color: $textColor;
+     &:hover {
+        text-decoration: underline;
+        text-decoration-color: rgba(245, 203, 78, 0.914);
+        text-underline-offset: 5px;
+    }
+     } 
+   } 
+   }
+
+//  @include flexCenter (column, red);
+   

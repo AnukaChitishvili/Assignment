@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ul {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+    } 
+    li {
+        cursor: pointer;
+    }
+    a {
+        margin-left: 5px;
+        color: grey;
+       
+    }
+   
+
+}

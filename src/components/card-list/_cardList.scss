@@ -1,0 +1,52 @@
+.card--wrapper {
+    width: 430px; 
+    height: 400px;
+    flex-shrink: 0;
+    background: rgb(239, 243, 239);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    div.content {
+        margin-bottom: 20px;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+       }
+    div.price--icon__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    img {
+        position: absolute;
+        width: 250px;
+        top: 0px;
+        left: 90px;
+    }
+
+    p { 
+        width: 353px;
+        white-space: initial;
+     }
+    span.score {
+        margin-left: 10px;
+    }
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    div.icons {
+        display: flex;
+       align-items: center;
+    }
+    div.trash {
+        margin-left: 10px;
+    }
+}
+
+
