@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faTrash, faPenToSquare, faStar} from '@fortawesome/free-solid-svg-icons'
 
 
-const CardList = ({setSelectedCard}) => { 
+const CardList = ({setSelectedCard, openModal}) => { 
     const [data, setData] = useState([])
 
     useEffect(() => {
@@ -19,7 +19,11 @@ const CardList = ({setSelectedCard}) => {
         method: "DELETE"
       })
     }
-
+   
+    const handleEdit = (item) => {
+      setSelectedCard(item)
+      openModal()
+     }
  
    return ( 
     <>   
@@ -34,10 +38,10 @@ const CardList = ({setSelectedCard}) => {
          </div>
          <span className='title'>{item.dish_name}</span>
          <p>{item.description}</p> 
-      <div className='price--icon__wrapper'> 
+        <div className='price--icon__wrapper'> 
          <span className='price'>${item.price}</span>
          <div className='icons'>
-         <FontAwesomeIcon icon={faPenToSquare} onClick={() => setSelectedCard(item)}/>
+         <FontAwesomeIcon icon={faPenToSquare} onClick={() => handleEdit(item)}/>
          <div className='trash'>
          <FontAwesomeIcon icon={faTrash} onClick={() => handleDelete(item.id)} />
          </div>

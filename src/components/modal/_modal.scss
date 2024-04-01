@@ -35,13 +35,20 @@
         border-radius: 12px;
         border: none;
    }
-   .button {
-    margin-top: 20px;
 
-}
+   div.btn--container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}  
+  .button {
+    cursor: pointer;
+  }
 
-.label {
-    margin-top: 5px;
+   .label {
+    margin-top: px;
 }
 }
 

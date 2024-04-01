@@ -208,11 +208,18 @@ button#add {
   border-radius: 12px;
   border: none;
 }
+.modal--content div.btn--container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
 .modal--content .button {
-  margin-top: 20px;
+  cursor: pointer;
 }
 .modal--content .label {
-  margin-top: 5px;
+  margin-top: px;
 }
 
 #root {

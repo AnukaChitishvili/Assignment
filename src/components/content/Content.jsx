@@ -18,9 +18,7 @@ const Content = () => {
     setIsModalOpen(false)
     setSelectedCard(null)
    }
-  
-
-
+   
   return (
     <> 
   <section className='container'> 
@@ -40,11 +38,9 @@ const Content = () => {
         <h1 className='heading'>Top List</h1>
         <h3>our mainstay menu</h3>
         <button id='add' onClick={openModal}>Add item</button>
-        {/* {isModalOpen && <Modal toggleModal={toggleModal} data={selectedCard} />} */}
         {isModalOpen && <Modal data={selectedCard} closeModal={closeModal} />}
-        {/* <CardList toggleModal={toggleModal} setSelectedCard={setSelectedCard}/> */}
-        <div className='card--list__container'>
-         <CardList/>
+        <div className='card--list__container' >
+         <CardList openModal={openModal} setSelectedCard={setSelectedCard}/>
         </div>
         </section>
     <section className='container'>
